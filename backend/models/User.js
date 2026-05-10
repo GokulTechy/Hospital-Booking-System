@@ -9,12 +9,16 @@ const userSchema = new mongoose.Schema({
   password: String,
   role: {
     type: String,
-    enum: ["patient", "doctor"],
+    enum: ["patient", "doctor", "admin"],
     default: "patient"
   },
   specialization: {
     type: String,
     default: ""
+  },
+  isActive: {
+    type: Boolean,
+    default: true
   }
 });
 
