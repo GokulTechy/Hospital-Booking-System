@@ -62,7 +62,7 @@ function Login() {
 
       <div className="auth-page">
         <div className="glass-card auth-card">
-          <h2 className="auth-title">Welcome Back 👋</h2>
+          <h2 className="auth-title">Welcome Back </h2>
           <p className="auth-subtitle">Login to book and manage hospital slots</p>
 
           <form onSubmit={handleLogin}>

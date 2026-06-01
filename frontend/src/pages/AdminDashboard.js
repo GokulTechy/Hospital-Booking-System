@@ -60,7 +60,7 @@ function AdminDashboard() {
       <Navbar />
 
       <div className="hero-section hero-primary" style={{marginBottom: '2rem'}}>
-        <h1 className="hero-title">🛡️ Admin Dashboard</h1>
+        <h1 className="hero-title"> Admin Dashboard</h1>
         <p className="hero-subtitle">Manage doctors, monitor patients, and track system appointments.</p>
       </div>
 
@@ -71,28 +71,28 @@ function AdminDashboard() {
           style={{ background: activeTab !== 'overview' ? 'white' : '', color: activeTab !== 'overview' ? 'var(--text-main)' : '' }}
           onClick={() => setActiveTab('overview')}
         >
-          📊 Overview
+          Overview
         </button>
         <button 
           className={`btn ${activeTab === 'doctors' ? 'btn-primary' : ''}`} 
           style={{ background: activeTab !== 'doctors' ? 'white' : '', color: activeTab !== 'doctors' ? 'var(--text-main)' : '' }}
           onClick={() => setActiveTab('doctors')}
         >
-          👨‍⚕️ Doctors List
+          Doctors List
         </button>
         <button 
           className={`btn ${activeTab === 'patients' ? 'btn-primary' : ''}`} 
           style={{ background: activeTab !== 'patients' ? 'white' : '', color: activeTab !== 'patients' ? 'var(--text-main)' : '' }}
           onClick={() => setActiveTab('patients')}
         >
-          🤒 Patients List
+          Patients List
         </button>
         <button 
           className={`btn ${activeTab === 'appointments' ? 'btn-primary' : ''}`} 
           style={{ background: activeTab !== 'appointments' ? 'white' : '', color: activeTab !== 'appointments' ? 'var(--text-main)' : '' }}
           onClick={() => setActiveTab('appointments')}
         >
-          📅 Appointments
+           Appointments
         </button>
       </div>
 
@@ -121,7 +121,7 @@ function AdminDashboard() {
       {/* Doctors Tab */}
       {activeTab === 'doctors' && (
         <div className="glass-card">
-          <h3 className="section-title">👨‍⚕️ Registered Doctors</h3>
+          <h3 className="section-title"> Registered Doctors</h3>
           {doctors.length === 0 ? (
             <p style={{textAlign: 'center', color: 'var(--text-muted)'}}>No doctors found in the system.</p>
           ) : (
@@ -165,7 +165,7 @@ function AdminDashboard() {
       {/* Patients Tab */}
       {activeTab === 'patients' && (
         <div className="glass-card">
-          <h3 className="section-title">🤒 Registered Patients</h3>
+          <h3 className="section-title"> Registered Patients</h3>
           {patients.length === 0 ? (
             <p style={{textAlign: 'center', color: 'var(--text-muted)'}}>No patients found in the system.</p>
           ) : (
@@ -189,7 +189,7 @@ function AdminDashboard() {
       {/* Appointments Tab */}
       {activeTab === 'appointments' && (
         <div className="glass-card">
-          <h3 className="section-title">📅 All Appointments</h3>
+          <h3 className="section-title"> All Appointments</h3>
           {appointments.length === 0 ? (
             <p style={{textAlign: 'center', color: 'var(--text-muted)'}}>No appointments found in the system.</p>
           ) : (

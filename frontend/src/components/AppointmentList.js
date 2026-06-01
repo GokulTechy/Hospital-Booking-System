@@ -42,8 +42,12 @@ function AppointmentList() {
   return (
     <div>
       <div style={{display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem'}}>
-        <button onClick={fetchBookings} className="btn" style={{background: '#edf2f9', color: 'var(--text-main)', border: '1px solid #dcdfe6'}}>
-          🔄 Refresh
+        <button onClick={fetchBookings} className="btn" style={{background: '#edf2f9', color: 'var(--text-main)', border: '1px solid #dcdfe6', display: 'inline-flex', alignItems: 'center', gap: '6px'}}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="sync-icon" style={{ transition: 'transform 0.4s ease' }}>
+            <path d="M21.5 2v6h-6" />
+            <path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+          </svg>
+          Refresh
         </button>
       </div>
 

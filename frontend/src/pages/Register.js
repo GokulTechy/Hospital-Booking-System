@@ -58,7 +58,7 @@ function Register() {
 
       <div className="auth-page register-bg">
         <div className="glass-card auth-card">
-          <h2 className="auth-title">Create Account 🏥</h2>
+          <h2 className="auth-title">Create Account</h2>
           <p className="auth-subtitle">Register as patient, doctor, or admin</p>
 
           <form onSubmit={handleRegister}>
